@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Everbright | Company Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #263445;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #123b65;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #80d4ff;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 480px;
+            background: linear-gradient(
+                rgba(10, 40, 70, 0.8),
+                rgba(10, 40, 70, 0.8)
+            ), url("kantor.jpeg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 60px 10%;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: #20a5d8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* SECTION */
+        section {
+            padding: 70px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+            color: #123b65;
+            font-size: 30px;
+        }
+
+        .about {
+            text-align: center;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* VISI MISI */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px #00000010;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #1688bd;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.7;
+        }
+
+        /* PRODUK */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px #00000010;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            margin: 15px 0 10px;
+            color: #123b65;
+        }
+
+        .product p {
+            padding: 0 15px;
+            line-height: 1.5;
+        }
+
+        .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 750px;
+    margin: auto;
+}
+
+        /* KONTAK */
+        .contact {
+            background: #123b65;
+            color: white;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        footer {
+            background: #092642;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .cards,
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">EVERBRIGHT</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#visi">Visi Misi</a>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- BERANDA -->
+    <div class="hero" id="home">
+        <div>
+            <h1>WELCOME TO<br>PT EVERBRIGHT</h1>
+            <p>
+                Mengenal lebih dekat PT Everbright, perusahaan yang berkomitmen untuk menghadirkan produk 
+                berkualitas serta memberikan pelayanan terbaik kepada pelanggan.
+            </p>
+            <a href="#about" class="btn">Selengkapnya</a>
+        </div>
+    </div>
+
+    <!-- TENTANG -->
+    <section id="about">
+        <h2 class="section-title">Tentang Kami</h2>
+
+        <div class="about">
+            <p>
+               PT Everbright adalah perusahaan manufaktur dan distribusi 
+               terkemuka di Indonesia yang terkenal sebagai produsen baterai
+               kering (dry cell) merek ABC dan distributor berbagai produk konsumen di Pulau Sumatra
+            </p>
+            <p>
+                Melalui pengalaman dan kerja sama yang baik,
+                perusahaan terus berupaya meningkatkan kualitas
+                serta mengembangkan usahanya.
+            </p>
+        </div>
+    </section>
+
+    <!-- VISI MISI -->
+    <section id="visi">
+        <h2 class="section-title">Visi dan Misi</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Visi</h3>
+                <p>
+                  Menjadi perusahaan manufaktur dan distribusi 
+                  terdepan yang mampu memenuhi kebutuhan konsumen 
+                  secara berkelanjutan dengan standar kualitas 
+                  internasional.
+
+
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Misi</h3>
+                <p>
+                  Perusahaan berkomitmen untuk menghasilkan produk 
+                  berkualitas tinggi yang ramah lingkungan dan aman
+                   bagi pengguna, meningkatkan keahlian sumber daya
+                    manusia serta mengembangkan teknologi secara 
+                    berkelanjutan, dan memperluas jaringan distribusi 
+                    guna menjamin ketersediaan produk di seluruh wilayah 
+                    operasional
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUK -->
+  <!-- PRODUK -->
+<section id="produk">
+    <h2 class="section-title">Produk Kami</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="baterai.jpg" alt="Produk 1">
+            <h3>Produk 1</h3>
+            <p>BATERAI ABC .</p>
+        </div>
+
+        <div class="product">
+            <img src="foyu.jpg" alt="Produk 2">
+            <h3>Produk 2</h3>
+            <p>FOYU .</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- KONTAK -->
+    <section class="contact" id="kontak">
+        <h2 class="section-title">Hubungi Kami</h2>
+
+        <p>PT Everbright</p>
+        <p>Alamat: [Binjai Km. 9,2 (atau Jl. Binjai Km. 9,2), 
+            Paya Geli, Sunggal, 
+            Kabupaten Deli Serdang / Medan, Sumatera Utara 20325]</p>
+        <p>Email: [info@abc-drycell.co.id]</p>
+        <p>Telepon: [+62 (61) 457 5333]</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 PT Everbright.
+            All Rights Reserved.
+        </p>
+        <p>Company Profile Website</p>
+    </footer>
+
+</body>
+</html>
